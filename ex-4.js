@@ -374,3 +374,17 @@ const bills = [
 ];
 
 // Start coding here
+function filterPayment() {}
+
+let arrayCheck = [];
+let hehe = 0;
+for (let check of bills) {
+  if (hehe = bills.total) {
+    arrayCheck.push(hehe);
+  }
+}
+
+console.log(arrayCheck);
+// for (let i=0; i < arrayCheck.length; i++) {
+//   if (arrayCheck[i] =)
+// }
