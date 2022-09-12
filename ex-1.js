@@ -373,4 +373,21 @@ const bills = [
   },
 ];
 
-// Start coding here
+// Full version: having to declare function separately.
+function addTotal(accumulator, currentValue) {
+  return accumulator + currentValue.total;
+}
+
+let findTotal = bills.reduce(addTotal, 0);
+
+
+// shorter version: use function within the built-in array function reduce
+// let findTotal = bills.reduce(function (accumulator, currentValue) {
+//   return accumulator + currentValue.total
+// }, 0);
+
+
+// shortest version: like the shorter version but with arrow function
+// let findTotal = bills.reduce((a, c) => a + c.total, 0);
+
+console.log(`Total bill transaction is ${findTotal}`)
