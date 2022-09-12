@@ -374,17 +374,15 @@ const bills = [
 ];
 
 // Start coding here
-function filterPayment() {}
+let onlyName = bills
+  .filter((bill) => bill.member !== null)
+  .map((bill) => bill.member.name);
+let unique = [];
 
-let arrayCheck = [];
-let hehe = 0;
-for (let check of bills) {
-  if (hehe = bills.total) {
-    arrayCheck.push(hehe);
-  }
-}
+for (let i = 0; i < onlyName.length; i++)
+  !unique.includes(onlyName[i])
+    ? unique.push(onlyName[i])
+    : console.log(unique);
+console.log(`Unique Members Count : ${unique.length}`);
 
-console.log(arrayCheck);
-// for (let i=0; i < arrayCheck.length; i++) {
-//   if (arrayCheck[i] =)
-// }
+// ข้อนี้ก็ไม่รู้

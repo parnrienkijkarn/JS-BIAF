@@ -373,5 +373,10 @@ const bills = [
   },
 ];
 
-// Start coding here
-const newMembers;
+const newMembers = bills
+  .filter((bill) => bill.member !== null)
+  .map((bill) => bill.member.name);
+console.log(newMembers);
+
+// ข้อนี้ไม่รู้เรื่องเลย
+

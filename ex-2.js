@@ -374,5 +374,9 @@ const bills = [
 ];
 
 // Start coding here
-
-const newBills;
+// function notNullMembers(find) {
+//   return find.member !== null;
+//
+// const newBills = bills.filter(notNullMembers);
+const newBills = bills.filter((find) => find.member !== null);
+console.log(newBills);
