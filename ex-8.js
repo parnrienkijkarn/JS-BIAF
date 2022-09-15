@@ -375,4 +375,13 @@ const bills = [
 
 // Start coding here
 
-const totalPaidByLocation;
+const totalPaidByLocation = {};
+const checkBills = bills.reduce((a, b) => {
+  if (totalPaidByLocation.hasOwnProperty(b.location)) {
+    totalPaidByLocation[b.location] = totalPaidByLocation[b.location] + b.total;
+  } else {
+    totalPaidByLocation[b.location] = b.total;
+  }
+}, {});
+console.log(totalPaidByLocation);
+// เชี่ยไรเนี่ย ยากชิบหาย
