@@ -386,3 +386,15 @@ for (let i = 0; i < onlyName.length; i++)
 console.log(`Unique Members Count : ${unique.length}`);
 
 // ข้อนี้ก็ไม่รู้
+// วิธีนี้ก็ได้หวะ
+// function findUnique(value, index, self) {
+//   return self.indexOf(value) === index;
+// }
+// let billMember = bills
+//   .filter(function (bills) {
+//     return bills.member != null;
+//   })
+//   .map((m) => m.member.name)
+//   .filter(findUnique);
+
+// console.log("Unique Members Count: " + billMember.length);

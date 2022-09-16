@@ -379,4 +379,15 @@ const newMembers = bills
 console.log(newMembers);
 
 // ข้อนี้ไม่รู้เรื่องเลย
+// แบบเต็มๆ 
+// const newBills = bills.filter(function (num) {
+//   if (num.member !== null)
+//   return num
+// });
 
+
+
+// let billMember = newBills.map(function (memberName) {
+// return memberName.member.name
+// })
+// console.log(billMember)

@@ -385,3 +385,32 @@ const checkBills = bills.reduce((a, b) => {
 }, {});
 console.log(totalPaidByLocation);
 // เชี่ยไรเนี่ย ยากชิบหาย
+// let totalPaid = bills.reduce(function (acc, array) {
+//   if (_.isEmpty(acc)) {
+//     acc[array.location] = array.total;
+//     return acc;
+//   } else {
+//     for (i in acc) {
+//       if (i === array.location) {
+//         acc[i] += array.total;
+//         return acc;
+//       }
+//     }
+//     acc[array.location] = array.total;
+//     return acc;
+//   }
+// })
+
+
+//อันนี้โค้ดสะอาดสุด
+// function locationsTotal(accumulator, currentValue) {
+//   if (currentValue.location in accumulator) {
+//       accumulator[currentValue.location] += currentValue.total;
+//   } else {
+//       accumulator[currentValue.location] = currentValue.total;
+//   }
+//   return accumulator;
+// }
+
+// let totalPaidByLocation = bills.reduce(locationsTotal, {});
+// console.log(totalPaidByLocation);

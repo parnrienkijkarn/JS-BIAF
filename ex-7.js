@@ -14,6 +14,17 @@ function isPalindrome(string) {
   //       return false;
   //     }
   //   }
+
+  // let reversed = ""
+	// for (let i = string.length - 1; i >= 0; i--) {
+
+	// 	reversed += string[i]
+	// }
+	// if (string == reversed) {
+	// 	return true
+	// } else {
+	// 	return false
+	// }
 }
 
 //Example case
